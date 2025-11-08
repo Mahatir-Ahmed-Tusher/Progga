@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>প্রজ্ঞা AI - শেখো, জিজ্ঞাসা করো, উত্তর জেনে নাও</title>
+    <meta name="description" content="বাংলাদেশের শিক্ষার্থীদের জন্য AI-চালিত শিক্ষার প্ল্যাটফর্ম। ৬ষ্ঠ থেকে ১০ম শ্রেণী পর্যন্ত সকল বিষয়ে ব্যাপক সহায়তা পান।" />
+    <meta name="keywords" content="প্রজ্ঞা AI, বাংলাদেশ শিক্ষা, AI শিক্ষা, অনলাইন শিক্ষা, গণিত, বিজ্ঞান, বাংলা, ইংরেজি" />
+    <meta name="author" content="Progga AI Team" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="প্রজ্ঞা AI - শেখো, জিজ্ঞাসা করো, উত্তর জেনে নাও" />
+    <meta property="og:description" content="বাংলাদেশের শিক্ষার্থীদের জন্য AI-চালিত শিক্ষার প্ল্যাটফর্ম। ৬ষ্ঠ থেকে ১০ম শ্রেণী পর্যন্ত সকল বিষয়ে ব্যাপক সহায়তা পান।" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://progga-ai.com" />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:site_name" content="Progga AI" />
+    <meta property="og:locale" content="bn_BD" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@progga_ai" />
+    <meta name="twitter:title" content="প্রজ্ঞা AI - শেখো, জিজ্ঞাসা করো, উত্তর জেনে নাও" />
+    <meta name="twitter:description" content="বাংলাদেশের শিক্ষার্থীদের জন্য AI-চালিত শিক্ষার প্ল্যাটফর্ম।" />
+    <meta name="twitter:image" content="/twitter-image.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#1E88E5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0D47A1" media="(prefers-color-scheme: dark)" />
+    
+    <!-- Manifest for PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://progga-ai.com" />
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Progga AI",
+      "alternateName": "প্রজ্ঞা AI",
+      "description": "AI-powered educational platform for Bangladeshi students from classes 6 to 10",
+      "url": "https://progga-ai.com",
+      "logo": "https://progga-ai.com/logo.png",
+      "sameAs": [
+        "https://facebook.com/progga-ai",
+        "https://twitter.com/progga_ai"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BD",
+        "addressLocality": "Dhaka"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "mahatirtusher@gmail.com"
+      },
+      "educationalLevel": "Secondary Education",
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "student"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+    
+    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
+  </body>
+</html>
